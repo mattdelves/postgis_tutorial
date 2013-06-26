@@ -4,7 +4,8 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Latlon</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15,7 +16,8 @@
     <% @locations.each do |location| %>
       <tr>
         <td><%= location.name %></td>
-        <td><%= location.latlon %></td>
+        <td><%= location.latitude %></td>
+        <td><%= location.longitude %></td>
         <td><%= link_to 'Show', location %></td>
         <td><%= link_to 'Edit', edit_location_path(location) %></td>
         <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
